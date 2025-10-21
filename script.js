@@ -17,10 +17,10 @@ function gameStart() {
         let penguin_spawn = document.getElementById(`${caught}hole`);
         time.innerText = timecount;
         img.forEach((el) => {
-            penguin_spawn.setAttribute('src', './images/penguin.png');
+            penguin_spawn.setAttribute('src', '/penguin.png');
             el.addEventListener('click', () => {
-                if (penguin_spawn.getAttribute('src') === './images/penguin.png') {
-                    let sound = new Audio('./images/sfx_point.mp3');
+                if (penguin_spawn.getAttribute('src') === '/penguin.png') {
+                    let sound = new Audio('/sfx_point.mp3');
                     sound.play();
                     sound.currentTime = 0;
                     scorecount++;
@@ -28,9 +28,9 @@ function gameStart() {
                     score.innerText = scorecount;
                 }
             })
-            if (penguin_spawn.getAttribute('src') === './images/penguin.png') {
+            if (penguin_spawn.getAttribute('src') === '/penguin.png') {
                 setInterval(() => {
-                    penguin_spawn.setAttribute('src', './images/hole.png');
+                    penguin_spawn.setAttribute('src', '/hole.png');
                     document.getElementById(`${caught}point`).style.display = 'none';
                 }, 2200);
             }
@@ -41,4 +41,5 @@ function gameStart() {
             window.location.reload();
         }
     }, 2000);
+
 }
