@@ -93,6 +93,29 @@
      height: 150px;
  }
 
+.main_create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #1c1c1c;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 2px 1px 4px 1px #1c1c1c;
+    border: none;
+}
+
+.name{
+    font-weight: 700;
+}
+
+.link_create{
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
  @media screen and (max-width: 900px) {
      .gamepad {
          grid-template-columns: repeat(3, 150px);
@@ -161,3 +184,4 @@
      }
 
  }
+
