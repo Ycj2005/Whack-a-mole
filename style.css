@@ -1,0 +1,162 @@
+ * {
+     font-family: "Poppins", sans-serif;
+     font-style: normal;
+ }
+
+ body {
+     height: auto;
+     background-image: url('./images/bg1.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ .heading {
+     text-align: center;
+     font-size: 20px;
+     font-weight: 700;
+     color: aliceblue;
+     text-shadow: 2px 4px 3px #1c1c1c;
+ }
+
+ .content {
+     width: 40%;
+     margin: 20px auto;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     background-color: #ffffffe2;
+     padding: 10px 20px;
+     border-radius: 10px;
+     box-shadow: 2px 3px 3px 4px #1c1c1c;
+ }
+
+ .score {
+     font-weight: 600;
+ }
+
+ .timing {
+     font-weight: 600;
+ }
+
+ .btn {
+     padding: 8px;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: 500;
+     background-color: rgb(175, 249, 26);
+ }
+
+
+ .gamepad {
+     height: 100%;
+     display: grid;
+     grid-template-columns: repeat(3, 200px);
+     place-content: center;
+     gap: 10px;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .hole {
+     cursor: pointer;
+     border: 1px solid #fff;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     background-color: #535353;
+ }
+
+ .after {
+     border: 3px solid #fff;
+     border-radius: 10px;
+     position: absolute;
+     width: 100px;
+     height: 20px;
+     z-index: 10;
+     padding: 6px;
+     color: #000;
+     background-color: #fff;
+     font-weight: 600;
+     letter-spacing: 1px;
+     left: 20%;
+     margin-top: 10px;
+     text-align: center;
+     display: none;
+     transition: 0.6s ease;
+ }
+
+
+ .img {
+     width: 200px;
+     height: 150px;
+ }
+
+ @media screen and (max-width: 900px) {
+     .gamepad {
+         grid-template-columns: repeat(3, 150px);
+     }
+
+     .img {
+         width: 150px;
+     }
+ }
+
+ @media screen and (max-width: 500px) {
+     .after {
+         width: 70px;
+         font-size: 14px;
+     }
+
+     .content {
+         width: 80%;
+     }
+
+     .gamepad {
+         grid-template-columns: repeat(3, 120px);
+     }
+
+     .img {
+         width: 120px;
+     }
+ }
+
+ @media screen and (max-width: 400px) {
+     .after {
+         width: 50px;
+         font-size: 10px;
+         padding: 0px;
+         height: auto;
+         top: -10px;
+         left: 0;
+     }
+
+     .content {
+         width: 80%;
+     }
+
+     .gamepad {
+         grid-template-columns: repeat(3, 100px);
+     }
+
+     .img {
+         width: 100px;
+         height: 100px;
+     }
+ }
+
+ @media screen and (max-width: 322px) {
+     .content {
+         width: 80%;
+     }
+
+     .gamepad {
+         grid-template-columns: repeat(3, 80px);
+     }
+
+     .img {
+         width: 80px;
+         height: 80px;
+     }
+ }
